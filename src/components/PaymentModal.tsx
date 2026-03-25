@@ -52,7 +52,7 @@ export default function PaymentModal({ isOpen, onClose, serviceName, amount = 15
           description: serviceName ? `Юридическая консультация: ${serviceName}` : "Юридическая консультация",
           name,
           phone,
-          successUrl: `${origin}/?payment=success`,
+          successUrl: `${origin}/payment/success`,
           failUrl: `${origin}/?payment=fail`,
         }),
       });
